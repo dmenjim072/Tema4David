@@ -10,9 +10,16 @@ import java.util.Scanner;
 public class MisVehiculos {
     public static void main(String[] args) {
              
-    Vehiculo miCacharro = new Vehiculo();
+    String color = "";
+    String marca = ""; 
+    String modelo = ""; 
+    String matricula = ""; 
+     
+    Vehiculo miCacharro = new Vehiculo(4, 500, 1600, color, marca, modelo, matricula);
+    System.out.println(miCacharro);
     
-        System.out.println("este coche tiene " + miCacharro.ruedas + " ruedas");
+    
+    
         
     }
     
