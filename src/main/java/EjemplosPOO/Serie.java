@@ -4,6 +4,8 @@
  */
 package EjemplosPOO;
 
+import java.util.Objects;
+
 /**
  *
  *Titulo, Genero(accion, comedia, scifi, drama), sipnosis, nº temporadas, productor
@@ -97,6 +99,50 @@ public class Serie {
 
     public void darLike(){
         this.numeroLikes++;
+    }
+
+    public int getNumeroLikes() {
+        return numeroLikes;
+    }
+    
+    
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 41 * hash + Objects.hashCode(this.titulo);
+        hash = 41 * hash + Objects.hashCode(this.genero);
+        hash = 41 * hash + Objects.hashCode(this.sipnosis);
+        hash = 41 * hash + Objects.hashCode(this.productora);
+        hash = 41 * hash + this.numeroTemporadas;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Serie other = (Serie) obj;
+        if (this.numeroTemporadas != other.numeroTemporadas) {
+            return false;
+        }
+        if (!Objects.equals(this.titulo, other.titulo)) {
+            return false;
+        }
+        if (!Objects.equals(this.genero, other.genero)) {
+            return false;
+        }
+        if (!Objects.equals(this.sipnosis, other.sipnosis)) {
+            return false;
+        }
+        return Objects.equals(this.productora, other.productora);
     }
     
     

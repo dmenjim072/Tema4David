@@ -43,12 +43,17 @@ public class ServicioSerie {
         return serie;
     }
     
-    public static void darLike(Serie serie){
+    public static void darLike(Serie serie){ //Creamos metodo para dar likes
         
         System.out.println("Te ha gustado la serie" + serie.getTitulo() + "?");
         String respuesta = teclado.nextLine();
         if (respuesta.equalsIgnoreCase("si")){
             serie.darLike();
         }
+    }
+    
+    public static Serie copiar(Serie origen){ //Creamos metodo para copiar series
+        Serie aux = new Serie(origen.getTitulo(), origen.getGenero(), origen.getSipnosis(), origen.getProductora(), origen.getNumeroTemporadas(), origen.getNumeroLikes());
+        return aux;
     }
 }
