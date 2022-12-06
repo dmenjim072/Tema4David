@@ -13,7 +13,9 @@ public class Ejemplos {
     public static void main(String[] args) {
         //Inicializacion con valores
         //numeros[0] = 1, numeros[1] = 2..
-        int[] numeros = {1, 2, 3, 4, 5, 6 ,7};
+        int[] numeros = {1, 2, 3, 4, 5, 6 ,7};//FORMA 1 para crear array
+        
+        int[] numeros2 = new int[10];//FORMA 2 para crear array
         
         System.out.println("Elemento de indice 5: " + numeros[5]);
         //Puedo recorrer cualquier elemento dentro del rango 0 y numeros.lenght -1
