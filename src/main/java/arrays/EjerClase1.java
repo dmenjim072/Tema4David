@@ -68,9 +68,7 @@ public class EjerClase1 {
                 respuesta = false;
                 break;
             }else{//Sino sera false
-                respuesta = true;
-                
-                
+                respuesta = true;                                
             }            
         }        
         return respuesta;
