@@ -19,15 +19,7 @@ public class EjerClase2 {
     
     public static void main(String[] args) {
     
-      
-        
-    char[] array1 = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o'
-            ,'p','q','r','s','t','u','v','w','x','y','z'};
-    
-        crearArray(array1);
-        
-        System.out.println(array1[3] + " - " + array1[4]);
-        
+                                                     
     }  
     
     public static int generarNumero(){
@@ -39,21 +31,18 @@ public class EjerClase2 {
         return numeroAleatorio;
     }
     
-    public static char[] crearArray(char[] aux){
+    public static char[] crearArray(){
+                     
+        int contador = 0;
         
-        Random numAleatorio = new Random();  
+        char[] abecedario = new char[26];
         
-        int numeroAleatorio = numAleatorio.nextInt(15, 26);
-        
-        char[] arrayNuevo = new char[numeroAleatorio];
-        
-        for (int i = 0; i < numeroAleatorio; i++) {
+        for (int i = 0; 'A' < 'Z'; i++) {
                                     
-            arrayNuevo[i] = (char) numeroAleatorio;
+            abecedario[i] = (char) i;
+            
+            contador++;
         }
-        
-        System.out.println(arrayNuevo[3] + " - " + arrayNuevo[4]);
-        
-        return arrayNuevo;       
+        //return abecedario;                                    
     }
 }
