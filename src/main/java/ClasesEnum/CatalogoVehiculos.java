@@ -4,6 +4,8 @@
  */
 package ClasesEnum;
 
+import java.util.Arrays;
+
 /**
  *
  * @author david
@@ -44,8 +46,10 @@ public class CatalogoVehiculos {
         }
     }
     
+    
     public int buscarVehiculo(Vehiculo v){
         
+        //Busqueda secuencial
         for (int i = 0; i < this.listaVehiculos.length; i++) {
             if(v.equals(this.listaVehiculos[i])){
                 return i;
@@ -54,6 +58,7 @@ public class CatalogoVehiculos {
         return -1;    
     }
 
+    //nº de vehiculos que hay en el catalogo(no el tamaño del array)
     public int getNumeroVehiculos() {
         return numeroVehiculos;
     }
@@ -62,7 +67,42 @@ public class CatalogoVehiculos {
         return listaVehiculos;
     }
     
+    //Para añadir un vehiculo nuevo al array, primero buscamos si hay un espacio libre y sino 
+    //creamos otro array nuevo copiando al anterior y añadiendo un espacio nuevo
+    public void añadirVehiculo(Vehiculo v){
+        
+        //Si hay hueco, se inserta en el hueco
+        if(this.numeroVehiculos<this.listaVehiculos.length){
+            for (int i = 0; i < listaVehiculos.length; i++) {
+                if(this.listaVehiculos[i] == null){//para elegir la posicion
+                    this.listaVehiculos[i] = v;
+                    this.numeroVehiculos++;
+                    System.out.println("Guardando vehiculo en posicion: " + i);
+                    break;
+                }
+            }
+        }else{//El array esta lleno
+            this.listaVehiculos = Arrays.copyOf(listaVehiculos, ++this.numeroVehiculos);//Array nuevo con 1 espacio mas
+        }
+    }
+    
+    public String toString(){
+        
+        String tmp = "";
+        
+        for (Vehiculo v : listaVehiculos){
+            if(v!=null){
+                           
+                tmp += v.toString() + "\n";
+            
+            }
+        }
+        return tmp;
+    }        
     
     
-    
+        
 }
+
+//Implementar metodo privado copiar
+//Implementar catalogo clientes (nombre, NIF, apellidos)
