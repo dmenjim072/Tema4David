@@ -45,6 +45,8 @@ public class PruebasClientes {
         //Mostramos el catalogo nuevamente con los cambios
         catalogo1.mostrarCatalogo(catalogo1);
         
+        
+        
     }
     
 }

@@ -100,7 +100,7 @@ public class CatalogoClientes {
             System.out.println(listaClientes[i]);
         }
         
-    }    
-    
+    } 
+                    
 }
 
