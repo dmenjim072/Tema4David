@@ -8,7 +8,7 @@ package ClasesEnum;
  *
  * @author david
  */
-public class Ejemplos {
+public class PruebasVehiculos {
     
     public static void main(String[] args) {
         

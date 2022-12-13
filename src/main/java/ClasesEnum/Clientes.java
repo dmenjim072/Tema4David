@@ -55,7 +55,5 @@ public class Clientes {
     public String toString() {
         return "CatalogoClientes{" + "nombre=" + nombre + ", NIF=" + NIF + ", apellido=" + apellido + '}';
     }
-    
-    
-    
+            
 }

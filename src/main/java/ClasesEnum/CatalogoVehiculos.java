@@ -46,7 +46,6 @@ public class CatalogoVehiculos {
         }
     }
     
-    
     public int buscarVehiculo(Vehiculo v){
         
         //Busqueda secuencial
