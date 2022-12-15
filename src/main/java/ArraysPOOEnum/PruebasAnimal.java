@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ClasesEnum;
+package ArraysPOOEnum;
 
 /**
  *
  * @author david
  */
-public class Test {
+public class PruebasAnimal {
     
     public static void main(String[] args) {
         

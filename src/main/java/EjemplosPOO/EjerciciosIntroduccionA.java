@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package POO;
+package EjemplosPOO;
 
 //Usando como referencia los apuntes de clase, responde brevemente a las siguientes cuestiones:
 //1.¿Qué es un programa orientado a objetos?
